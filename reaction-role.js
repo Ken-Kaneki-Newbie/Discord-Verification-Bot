@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 	if (message.content === 'l!verify') {
-		const reactmessage = await message.channel.send('React with 👌 to get your role!');
+		const reactmessage = await message.channel.send('React with 👌 to get yourself verified!');
 		await reactmessage.react('👌');
 
 		const filter = (reaction, user) => reaction.emoji.name === '👌' && !user.bot;
